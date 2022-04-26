@@ -11,9 +11,9 @@ const manifest = {
     default_popup: 'src/pages/popup/index.html',
     default_icon: 'favicon-32.png',
   },
-  chrome_url_overrides: {
-    newtab: 'src/pages/newtab/index.html',
-  },
+  // chrome_url_overrides: {
+  //   newtab: 'src/pages/newtab/index.html',
+  // },
   icons: {
     128: 'favicon-144.png',
   },
