@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
+import createManifest from "./plugins/create-manifest";
+import mvContentStyle from "./plugins/mv-content-style"
 
 // https://vitejs.dev/config/
 const root = resolve(__dirname, 'src');
@@ -10,7 +12,7 @@ const assetsDir = resolve(root, 'assets');
 const publicDir = resolve(__dirname, 'public');
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), createManifest(), mvContentStyle()],
   resolve: {
     '@': root,
     '@assets': assetsDir,
