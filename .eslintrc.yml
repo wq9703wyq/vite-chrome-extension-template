@@ -1,0 +1,47 @@
+extends:
+  - airbnb-base
+  - plugin:vue/recommended
+  - prettier
+  - prettier/vue
+globals:
+  gio: true
+parserOptions:
+  parser: babel-eslint
+rules:
+  no-restricted-globals:
+    - off
+  import/prefer-default-export:
+    - off
+  import/extensions:
+    - off
+  func-names:
+    - off
+  no-nested-ternary:
+    - off
+  no-multi-assign:
+    - off
+  no-throw-literal:
+    - off
+  no-param-reassign:
+    - error
+    - props: false
+  no-shadow:
+    - error
+    - allow:
+        - state
+  no-unused-expressions:
+    - error
+    - allowShortCircuit: true
+      allowTernary: true
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
+  # parcel support
+  import/no-absolute-path:
+    - off
+  import/no-unresolved:
+    - off
+  # experiment
+  complexity:
+    - off
+    - 11
