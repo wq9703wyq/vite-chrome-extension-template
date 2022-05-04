@@ -13,3 +13,4 @@
 3. 原本预计的是搭建一个既支持 Content-script 方案 也支持 Popup 方案 的 vite模板，为了解决 [**Content-script**  是不支持 **import**](https://stackoverflow.com/a/48121629) 的问题而使用 [vite-plugin-chrome-extension]([StarkShang/vite-plugin-chrome-extension: A vite plugin to bundle chrome extensions for Manifest V3. (github.com)](https://github.com/StarkShang/vite-plugin-chrome-extension)) ，但该插件存在 [**Popup** 样式文件没有加载的问题]([No style when building examples · Issue #8 · StarkShang/vite-plugin-chrome-extension (github.com)](https://github.com/StarkShang/vite-plugin-chrome-extension/issues/8)) 的问题，再加上该插件处于 **不维护** 状态，因此弃用。
 4.  因此，决定先试用 Popup 方案进行开发，之后再研究 **Parcel**、**rool-up** 等打包插件与 **Vite** 是否存在差异
 
+5. test
